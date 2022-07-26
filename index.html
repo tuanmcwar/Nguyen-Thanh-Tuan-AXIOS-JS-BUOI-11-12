@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-light" href="#">CyperSoft</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="#">Shop</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#">From</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-muted"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sport
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="SearchInput"
+            />
+            <button
+              class="btn btn-outline-success my-2 my-sm-0"
+              type="submit"
+              id="Search"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="border-top border-bottom pt-3 pb-3 mt-3 text-dark h6">
+        Home/Product/Create
+      </div>
+      <h3 class="pt-3 pb-1">Create product</h3>
+      <form class="border bg-white rounded-top pb-4" id="myForm">
+        <h3 class="p-3 text-warning bg-dark rounded-top mb-4">Product info</h3>
+        <div class="form-row">
+          <div class="form-group col-md-6 pl-4 pr-4">
+            <label for="" class="h4 text-muted">id</label>
+            <input
+              type="text"
+              class="form-control"
+              id="id"
+              placeholder="product id"
+            />
+          </div>
+          <div class="form-group col-md-6 pl-4 pr-4">
+            <label for="" class="h4 text-muted">image</label>
+            <input
+              type="text"
+              class="form-control"
+              id="image"
+              placeholder="product image link"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6 pl-4 pr-4">
+            <label for="" class="h4 text-muted">name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="product name"
+            />
+          </div>
+          <div class="form-group col-md-6 pl-4 pr-4">
+            <label for="" class="h4 text-muted">ProductType</label>
+            <select class="form-control" id="ProductType">
+              <option>laptop</option>
+
+              <option>mobile</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6 pl-4">
+            <label for="" class="h4 text-muted">price</label>
+            <input
+              type="text"
+              class="form-control"
+              id="price"
+              placeholder="product price"
+            />
+          </div>
+          <div class="form-group col-md-6 pl-4 pr-4">
+            <label for="" class="h4 text-muted">price</label>
+            <textarea
+              id="priceDescription"
+              class="form-control"
+              placeholder="product description"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+      <div
+        class="form-group p-3 bg-light rounded-bottom border border-top-0 d-flex justify-content-between"
+      >
+        <div class="">
+          <button id="Create" class="btn btn-primary">Create</button>
+          <button id="Update" class="btn btn-success">Update</button>
+        </div>
+        <div class="">
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="SearchInput1"
+            />
+            <button
+              class="btn btn-outline-success my-2 my-sm-0"
+              type="submit"
+              id="Search1"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="mt-2 bg-secondary width">
+        <table class="table text-warning border-0 table table-borderless">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>image</th>
+              <th>name</th>
+              <th>price</th>
+              <th>description</th>
+              <th>type</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="productTable" class="bg-white text-dark border-danger">
+            <!-- <tr>
+                        <td id="">1</td>
+                    </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="modal_dialog">
+      <div class="title"></div>
+      <input type="button" value="yes" id="btnYes" />
+      <input type="button" value="no" id="btnNo" />
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./model/ProDuct.js"></script>
+
+    <script src="./controllers/index.js"></script>
+  </body>
+</html>
