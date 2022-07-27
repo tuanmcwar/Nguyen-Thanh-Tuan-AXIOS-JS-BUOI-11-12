@@ -201,18 +201,3 @@ function renderProduct(arrProduct) {
 
   document.querySelector("#productTable").innerHTML = html;
 }
-function DoSomethingDangerous() {
-  var warning = "Are you sure you want to do this?";
-  $(".title").html(warning);
-  var dialog = $("#modal_dialog").dialog();
-  function Yes() {
-    dialog.dialog("close");
-    // Do something
-  }
-  function No() {
-    dialog.dialog("close");
-    // Do something else
-  }
-  $("#btnYes").click(Yes);
-  $("#btnNo").click(No);
-}
